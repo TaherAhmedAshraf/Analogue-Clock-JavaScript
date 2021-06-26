@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(12, 11, 31);
+    width: 100%;
+    height: 100vh;
+}
+
+.clockFrame{
+    border: 10px solid rgb(253, 219, 253);
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 20s;
+    box-shadow: 0px 0px 200px rgb(180, 14, 180);
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #ffffff0d);
+}
+
+.redDot{
+    background: rgb(255, 117, 117);
+    box-shadow: 0px 0px 10px red;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.Hour-Det{
+    width: 60px;
+    height: 6px;
+    background: white;
+    position: absolute;
+    top: 49%;
+    left: 20%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    border-radius: 15px;
+    transition:all 0.5s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0, 1.51);
+    box-shadow: 0px 0px 15px blue;
+    
+}
+
+.Min-Det{
+    width: 70px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    transform-origin: 100%;
+    transform: rotate(0deg);
+    border-radius: 15px;
+    transition:all 0.5s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0, 1.51);
+    box-shadow: 0px 0px 15px red;
+}
+
+.Sec-Det{
+    width: 80px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform-origin: 100%;
+    transform: rotate(180deg);
+    border-radius: 15px;
+    transition:all 0.2s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0, 1.51);
+    box-shadow: 0px 0px 15px rgb(3, 211, 3);
+    
+}
+
+#creator p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Nerko One', cursive;
+    text-shadow: 0px 0px 20px rgb(177, 21, 224);
+    transition: 3s;
+}
+
+#creator p a{
+    color: white;
+}
